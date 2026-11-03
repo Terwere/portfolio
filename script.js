@@ -268,3 +268,38 @@ function handleFormSubmit(e) {
     if (toast) toast.classList.remove('show');
   }, 4000);
 }
+
+// formulair de demande
+async function handleFormSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+  const bouton = form.querySelector('button[type="submit"]');
+  const texteOriginal = bouton.innerHTML;
+
+  bouton.disabled = true;
+  bouton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+
+  try {
+    const reponse = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(Object.fromEntries(new FormData(form)))
+    });
+    const resultat = await reponse.json();
+
+    if (reponse.ok && resultat.success) {
+      alert('Merci ! Votre message a bien été envoyé. Je vous réponds sous 24h ouvrées.');
+      form.reset();
+    } else {
+      alert("Une erreur est survenue. Réessayez ou contactez-moi par WhatsApp.");
+    }
+  } catch (erreur) {
+    alert("Problème de connexion. Réessayez ou contactez-moi par WhatsApp.");
+  } finally {
+    bouton.disabled = false;
+    bouton.innerHTML = texteOriginal;
+  }
+}
