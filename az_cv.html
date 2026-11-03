@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdoul-Azizou Abou-Bakari | Portfolio & CV - Développeur & Architecte Digital</title>
+  <meta name="description"
+    content="Portfolio et CV de Abdoul-Azizou Abou-Bakari (AZ) — Développeur Full-Stack, Concepteur de Solutions Digitales & UI/UX. Découvrez mes projets (YOBOU, Apps Web & Mobile) et compétences.">
+  <meta name="author" content="Abdoul-Azizou Abou-Bakari">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style_az_cv.css">
+  
+</head>
+
+<body>
+
+  <!-- Ambient Effects -->
+  <div class="bg-mesh"></div>
+  <div class="bg-grid-pattern"></div>
+
+  <!-- ==========================================================================
+       NAVBAR
+       ========================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-badge">AZ</div>
+        <span>ABDOUL-AZIZOU</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Accueil</a></li>
+        <li><a href="#about" class="nav-link">À Propos</a></li>
+        <li><a href="#parcours" class="nav-link">Parcours & CV</a></li>
+        <li><a href="#competences" class="nav-link">Compétences</a></li>
+        <li><a href="#projets" class="nav-link">Projets</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-menu-mobile-actions">
+          <button class="btn btn-outline" onclick="window.print()">
+            <i class="fas fa-file-pdf"></i> CV PDF
+          </button>
+          <a href="#contact" class="btn btn-primary nav-link">
+            <i class="fas fa-paper-plane"></i> Me Recruter
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Changer de thème" aria-label="Toggle Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="btn btn-outline btn-sm" onclick="window.print()" title="Imprimer ou enregistrer le CV">
+          <i class="fas fa-file-pdf"></i> CV PDF
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fas fa-paper-plane"></i> Me Recruter
+        </a>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Menu Mobile">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-greeting">
+            <span class="pulse-dot"></span>
+            <span>DISPONIBLE POUR DE NOUVEAUX PROJETS & MISSIONS</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bonjour, je suis <br>
+            <span class="gradient-text">Abdoul-Azizou</span> <br>
+            Abou-Bakari
+          </h1>
+
+          <p class="hero-subtitle">
+            Développeur Full-Stack • Architecte Digital • Concepteur de Solutions E-commerce & Mobile
+          </p>
+
+          <p class="hero-desc">
+            Passionné par la création de produits technologiques à fort impact en Afrique et à l'international. 
+            Je conçois des architectures fiables, des interfaces fluides et des applications web/mobiles évolutives.
+          </p>
+
+          <div class="hero-tags">
+            <span class="hero-tag"><i class="fab fa-js"></i> JavaScript / TS</span>
+            <span class="hero-tag"><i class="fab fa-react"></i> React / Next.js</span>
+            <span class="hero-tag"><i class="fab fa-node-js"></i> Node.js & APIs</span>
+            <span class="hero-tag"><i class="fas fa-database"></i> SQL & NoSQL</span>
+            <span class="hero-tag"><i class="fas fa-mobile-alt"></i> Mobile & UI/UX</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projets" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> Découvrir mes Réalisations
+            </a>
+            <button class="btn btn-outline" onclick="window.print()">
+              <i class="fas fa-download"></i> Télécharger CV (PDF)
+            </button>
+            <a href="yobou_homepage.html" class="btn btn-outline" target="_blank" title="Voir la Marketplace Yobou">
+              <i class="fas fa-shopping-cart"></i> Projet YOBOU Live
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Card with Mockups -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="avatar-wrapper">
+                <div class="avatar-inner">
+                  <span><img src="image/profile.jpg" alt="az profil"></span> 
+                </div>
+              </div>
+              <h2 class="profile-name">Abdoul-Azizou A.</h2>
+              <div class="profile-role">Ingénieur Logiciel & Concepteur</div>
+              <div class="badge badge-primary">
+                <i class="fas fa-map-marker-alt"></i> Cotonou, Bénin • Remote Worldwide
+              </div>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat-box">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Années Exp.</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Projets</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Rigueur</div>
+              </div>
+            </div>
+
+            <div class="profile-links">
+              <a href="https://github.com" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/abdoul-azizou-abou-bakari-b95745255" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/2290169727734" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="mailto:abdoulazizou69725@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-card floating-card-1">
+            <div class="float-icon orange"><i class="fas fa-boxes-packing"></i></div>
+            <div class="float-text">
+              <strong>YOBOU E-Commerce</strong>
+              <span>Architecture & Logistique</span>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-2">
+            <div class="float-icon cyan"><i class="fas fa-shield-halved"></i></div>
+            <div class="float-text">
+              <strong>Code Propre & Sécurisé</strong>
+              <span>Best Practices Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       A PROPOS SECTION
+       ========================================================================== */
+  -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary section-tag"><i class="fas fa-user"></i> Profil & Vision</div>
+        <h2 class="section-title">Bâtir des solutions numériques <span class="gradient-text">performantes</span></h2>
+        <p class="section-desc">
+          Une approche centrée sur l'utilisateur final, l'optimisation des performances et la résilience technique.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je suis un passionné des technologies du web et du mobile avec une expertise polyvalente allant de la 
+            <strong>conception d'architectures logicielles</strong> jusqu'au <strong>développement d'interfaces modernes</strong>.
+          </p>
+          <p>
+            Mon projet phare, <strong>YOBOU</strong> (« Le Commerce de Demain en Afrique »), illustre ma capacité à concevoir 
+            un écosystème e-commerce complet : gestion des commandes, suivi logistique en temps réel, paiements digitaux 
+            (Mobile Money, Cartes) et applications fluides adaptées aux réalités du continent.
+          </p>
+
+          <ul class="info-list">
+            <li class="info-item"><i class="fas fa-check-circle"></i> <strong>Nom :</strong> Abdoul-Azizou Abou-Bakari</li>
+            <li class="info-item"><i class="fas fa-check-circle"></i> <strong>Rôle :</strong> Lead Dev / Full-Stack</li>
+            <li class="info-item"><i class="fas fa-check-circle"></i> <strong>Langues :</strong> Français, Anglais</li>
+            <li class="info-item"><i class="fas fa-check-circle"></i> <strong>Disponibilité :</strong> Immédiate</li>
+          </ul>
+
+          <div style="margin-top: 25px;">
+            <a href="#parcours" class="btn btn-primary btn-sm"><i class="fas fa-briefcase"></i> Explorer mon Parcours</a>
+          </div>
+        </div>
+
+        <div class="about-cards-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+            <h3 class="feature-title">Architecture Modulaire</h3>
+            <p class="feature-desc">Systèmes découplés, APIs RESTful / GraphQL, micro-services et bases de données optimisées.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="feature-title">UI/UX & Design Graphique</h3>
+            <p class="feature-desc">Conception ergonomique, maquettes interactives et design systems cohérents.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+            <h3 class="feature-title">Haute Performance</h3>
+            <p class="feature-desc">Temps de chargement minimaux, SEO technique soigné et respect des Core Web Vitals.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-mobile-screen-button"></i></div>
+            <h3 class="feature-title">Mobile-First</h3>
+            <p class="feature-desc">Applications Web Progressives (PWA) et apps mobiles optimisées pour tous les terminaux.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PARCOURS & CV (TIMELINE)
+       ========================================================================== -->
+  <section id="parcours" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary section-tag"><i class="fas fa-graduation-cap"></i> Expériences & Formations</div>
+        <h2 class="section-title">Parcours & <span class="gradient-text">Expérience</span></h2>
+        <p class="section-desc">Un historique d'apprentissage continu et de réalisations professionnelles concrètes.</p>
+      </div>
+
+      <div class="cv-tabs">
+        <button class="cv-tab-btn active" onclick="switchTimeline('all')">
+          <i class="fas fa-list"></i> Tout voir
+        </button>
+        <button class="cv-tab-btn" onclick="switchTimeline('exp')">
+          <i class="fas fa-briefcase"></i> Expériences Pro
+        </button>
+        <button class="cv-tab-btn" onclick="switchTimeline('edu')">
+          <i class="fas fa-school"></i> Formations & Diplômes
+        </button>
+      </div>
+
+      <div class="cv-timeline" id="timeline-container">
+
+        <!-- Exp 1: YOBOU -->
+        <div class="timeline-item" data-type="exp">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Fondateur & Lead Architecte Digital</h3>
+                <div class="timeline-company"><i class="fas fa-store"></i> YOBOU — Plateforme E-commerce & Logistique</div>
+              </div>
+              <span class="timeline-period">2023 - Présent</span>
+            </div>
+            <p class="timeline-desc">
+              Conception intégrale de l'écosystème YOBOU reliant commerçants, clients et livreurs en Afrique de l'Ouest.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Élaboration de l'architecture technique, modélisation des données et flux logistiques.</li>
+              <li>Création des maquettes UI/UX, branding (carte de visite, packaging, mobile splash screens).</li>
+              <li>Intégration des passerelles de paiement Mobile Money (MTN, Moov, Wave) et suivi GPS des livraisons.</li>
+            </ul>
+            <div class="timeline-tech-stack">
+              <span class="tech-pill">E-Commerce</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">WebSockets</span>
+              <span class="tech-pill">UI/UX Design</span>
+              <span class="tech-pill">Mobile Money APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp 2: Full-Stack Dev -->
+        <div class="timeline-item" data-type="exp">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Développeur Full-Stack & Consultant Web</h3>
+                <div class="timeline-company"><i class="fas fa-laptop-code"></i> Projets Freelance & Entreprises</div>
+              </div>
+              <span class="timeline-period">2021 - 2023</span>
+            </div>
+            <p class="timeline-desc">
+              Développement d'applications web sur mesure, portails d'entreprises et tableaux de bord analytiques.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Développement de Single Page Applications (SPA) dynamiques et responsives.</li>
+              <li>Optimisation de la vitesse de chargement et conformité aux standards de sécurité OWASP.</li>
+              <li>Mise en place de bases de données relationnelles et non-relationnelles hautement scalables.</li>
+            </ul>
+            <div class="timeline-tech-stack">
+              <span class="tech-pill">JavaScript / ES6+</span>
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edu 1: Diplôme Ingénierie -->
+        <div class="timeline-item" data-type="edu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Master / Licence en Génie Logiciel & Informatique</h3>
+                <div class="timeline-company"><i class="fas fa-university"></i> Université & Instituts Supérieurs</div>
+              </div>
+              <span class="timeline-period">Formation Universitaire</span>
+            </div>
+            <p class="timeline-desc">
+              Spécialisation en Conception de Systèmes d'Information, Algorithmique Avancée, Génie Logiciel et Bases de Données.
+            </p>
+            <div class="timeline-tech-stack">
+              <span class="tech-pill">Architecture Logicielle</span>
+              <span class="tech-pill">Méthodes Agiles (Scrum)</span>
+              <span class="tech-pill">Sécurité Informatique</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edu 2: Certifications -->
+        <div class="timeline-item" data-type="edu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Certifications Cloud, UI/UX & Développement Web Moderne</h3>
+                <div class="timeline-company"><i class="fas fa-certificate"></i> Formations Professionnelles Continues</div>
+              </div>
+              <span class="timeline-period">En Continu</span>
+            </div>
+            <p class="timeline-desc">
+              Perfectionnement régulier sur les technologies Cloud, architectures serverless et design centré utilisateur.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== -->
+  <section id="competences">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary section-tag"><i class="fas fa-chart-pie"></i> Savoir-Faire Technique</div>
+        <h2 class="section-title">Matrice des <span class="gradient-text">Compétences</span></h2>
+        <p class="section-desc">Un éventail de compétences techniques et méthodologiques constamment actualisé.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-code"></i></div>
+            <h3 class="category-title">Frontend & Web</h3>
+          </div>
+          <div class="skills-list">
+            <div>
+              <div class="skill-item-row"><span>HTML5 / CSS3 / Vanilla JS</span><span>95%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="95%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>React.js / Next.js</span><span>88%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="88%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Responsive Design & A11y</span><span>92%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="92%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>TypeScript</span><span>82%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="82%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & DB -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-server"></i></div>
+            <h3 class="category-title">Backend & Data</h3>
+          </div>
+          <div class="skills-list">
+            <div>
+              <div class="skill-item-row"><span>Node.js / Express</span><span>90%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="90%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>APIs RESTful & WebSockets</span><span>92%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="92%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>PostgreSQL / MySQL</span><span>85%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="85%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>MongoDB / Redis</span><span>80%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture & Cloud -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-cloud"></i></div>
+            <h3 class="category-title">Systèmes & Outils</h3>
+          </div>
+          <div class="skills-list">
+            <div>
+              <div class="skill-item-row"><span>Git / GitHub CI/CD</span><span>90%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="90%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Docker & Déploiement</span><span>82%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="82%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Architecture Logistique</span><span>95%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="95%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Paiements Mobile Money</span><span>92%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="92%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design & UI/UX -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-pen-nib"></i></div>
+            <h3 class="category-title">Design & Branding</h3>
+          </div>
+          <div class="skills-list">
+            <div>
+              <div class="skill-item-row"><span>Figma / Prototypage</span><span>88%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="88%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Branding & Mockups</span><span>90%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="90%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Identité Visuelle</span><span>86%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="86%"></div></div>
+            </div>
+            <div>
+              <div class="skill-item-row"><span>Design Systems</span><span>85%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-progress="85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS / SHOWCASE SECTION
+       ========================================================================== -->
+  <section id="projets" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary section-tag"><i class="fas fa-laptop-code"></i> Portfolio</div>
+        <h2 class="section-title">Mes Dernières <span class="gradient-text">Réalisations</span></h2>
+        <p class="section-desc">Découvrez une sélection de projets digitaux, plateformes et créations graphiques.</p>
+      </div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" onclick="filterProjects('all')">Tous</button>
+        <button class="filter-btn" onclick="filterProjects('ecommerce')">E-Commerce & Logistique</button>
+        <button class="filter-btn" onclick="filterProjects('web')">Web Apps</button>
+        <button class="filter-btn" onclick="filterProjects('branding')">Design & Branding</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 (FEATURED) : YOBOU -->
+        <div class="project-card featured" data-category="ecommerce">
+          <div class="project-media">
+            <div class="project-badge-overlay">
+              <span class="badge badge-primary"><i class="fas fa-star"></i> Projet Phare</span>
+            </div>
+            <img src="image/YOBOU Brand Mockup - Delivery Motorcycle.jpeg" alt="Yobou Motorcycle Delivery Mockup"
+              onerror="this.src='image/yobou-logo.png'">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tech-pill">E-Commerce</span>
+              <span class="tech-pill">Marketplace</span>
+              <span class="tech-pill">Logistique Afrique</span>
+              <span class="tech-pill">Mobile Money</span>
+            </div>
+            <h3 class="project-title">YOBOU — Le Commerce de Demain en Afrique</h3>
+            <p class="project-desc">
+              Écosystème digital et logistique complet intégrant une marketplace multi-vendeurs, un module de géolocalisation
+              pour coursiers, le paiement sécurisé par Mobile Money et un tracking en temps réel des commandes.
+            </p>
+            <div class="project-footer">
+              <a href="yobou_homepage.html" target="_blank" class="btn btn-primary btn-sm">
+                <i class="fas fa-external-link-alt"></i> Ouvrir la Marketplace
+              </a>
+              <button class="project-link" onclick="openProjectModal('yobou')">
+                En savoir plus <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 : YOBOU Mobile App -->
+        <div class="project-card" data-category="ecommerce">
+          <div class="project-media">
+            <img src="image/YOBOU Brand Mockup - Mobile App Splash Screen.jpeg" alt="Yobou Mobile App Splash Screen">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tech-pill">Mobile UI/UX</span>
+              <span class="tech-pill">PWA</span>
+              <span class="tech-pill">Figma</span>
+            </div>
+            <h3 class="project-title">YOBOU Mobile App Experience</h3>
+            <p class="project-desc">
+              Interface mobile ultra-rapide avec expérience d'achat en 3 clics, notifications push et synchronisation hors-ligne.
+            </p>
+            <div class="project-footer">
+              <button class="project-link" onclick="openProjectModal('yobou-mobile')">
+                Voir détails <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 : YOBOU Packaging & Delivery Box -->
+        <div class="project-card" data-category="branding">
+          <div class="project-media">
+            <img src="image/YOBOU Brand Mockup - Delivery Box.jpeg" alt="YOBOU Brand Mockup Box">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tech-pill">Branding</span>
+              <span class="tech-pill">Packaging</span>
+              <span class="tech-pill">3D Mockup</span>
+            </div>
+            <h3 class="project-title">Branding & Packaging YOBOU</h3>
+            <p class="project-desc">
+              Identité visuelle cohérente et packagings de livraison éco-responsables créés pour renforcer la confiance client.
+            </p>
+            <div class="project-footer">
+              <button class="project-link" onclick="openProjectModal('yobou-brand')">
+                Voir détails <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 : Business Card & Identité Professionnelle -->
+        <div class="project-card" data-category="branding">
+          <div class="project-media">
+            <img src="image/YOBOU Business Card - ABDOUL-AZIZOU ABOU-BAKARI.png" alt="Business Card Abdoul-Azizou">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tech-pill">Corporate Identity</span>
+              <span class="tech-pill">Print Design</span>
+            </div>
+            <h3 class="project-title">Carte de Visite & Identité Executive</h3>
+            <p class="project-desc">
+              Conception de la carte de visite exécutive pour Abdoul-Azizou Abou-Bakari avec QR code interactif.
+            </p>
+            <div class="project-footer">
+              <button class="project-link" onclick="openProjectModal('business-card')">
+                Voir détails <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 : Dashboard Logistique -->
+        <div class="project-card" data-category="web">
+          <div class="project-media">
+            <img src="image/YOBOU Brand Mockup - Shopping Bag.jpeg" alt="Shopping Bag Mockup">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tech-pill">Dashboard</span>
+              <span class="tech-pill">Analytics</span>
+              <span class="tech-pill">Temps Réel</span>
+            </div>
+            <h3 class="project-title">Système de Dispatch Logistique</h3>
+            <p class="project-desc">
+              Tableau de bord de répartition automatique des courses pour les livreurs avec calcul dynamique des itinéraires.
+            </p>
+            <div class="project-footer">
+              <button class="project-link" onclick="openProjectModal('dispatch')">
+                Voir détails <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VALEURS & ENGAGEMENTS
+       ========================================================================== -->
+  <section id="valeurs">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary section-tag"><i class="fas fa-heart"></i> Principes & Philosophie</div>
+        <h2 class="section-title">Ce qui guide mon <span class="gradient-text">Travail</span></h2>
+        <p class="section-desc">Des standards d'exigence élevés pour des projets réussis et pérennes.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-code-branch"></i></div>
+          <h3 class="feature-title">Code Propre & Maintenable</h3>
+          <p class="feature-desc">Des bases de code documentées, modulaires et faciles à faire évoluer par toute équipe.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-stopwatch"></i></div>
+          <h3 class="feature-title">Agilité & Respect des Délais</h3>
+          <p class="feature-desc">Livraisons itératives, communication transparente et engagement strict sur les plannings.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-earth-africa"></i></div>
+          <h3 class="feature-title">Impact Local & Vision Globale</h3>
+          <p class="feature-desc">Créer des technologies robustes qui répondent précisément aux défis réels du terrain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary section-tag"><i class="fas fa-paper-plane"></i> Contact Direct</div>
+        <h2 class="section-title">Démarrons un <span class="gradient-text">Projet Ensemble</span></h2>
+        <p class="section-desc">Une idée, une opportunité de recrutement ou une collaboration ? Écrivez-moi dès aujourd'hui.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 class="profile-name">Coordonnées</h3>
+          <p style="color: var(--text-muted); margin: 10px 0 20px; font-size: 0.95rem;">
+            N'hésitez pas à me contacter via mes canaux directs. Je réponds généralement sous 24h ouvrées.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:contact@yobou.bj" class="contact-channel-item">
+              <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+              <div class="channel-meta">
+                <strong>Email</strong>
+                <span>contact@yobou.bj / abdoulazizou69725@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/2290169727734" target="_blank" class="contact-channel-item">
+              <div class="channel-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="channel-meta">
+                <strong>WhatsApp / Téléphone</strong>
+                <span>+229 01 69 72 77 34</span>
+              </div>
+            </a>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon"><i class="fas fa-location-dot"></i></div>
+              <div class="channel-meta">
+                <strong>Localisation</strong>
+                <span>Cotonou, Bénin (Disponible en Remote)</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 25px;">
+            <button class="btn btn-outline btn-sm" onclick="window.print()" style="width: 100%;">
+              <i class="fas fa-print"></i> Version Imprimable du CV
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Votre Nom *</label>
+                <input type="text" id="name" class="form-control" placeholder="Ex: Jean Dupont" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Votre Email *</label>
+                <input type="email" id="email" class="form-control" placeholder="jean@exemple.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Objet du Message *</label>
+              <input type="text" id="subject" class="form-control" placeholder="Ex: Opportunité de projet / Mission" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Votre Message *</label>
+              <textarea id="message" class="form-control" placeholder="Décrivez brièvement votre besoin ou projet..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Envoyer le Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="nav-logo">
+          <div class="logo-badge">AZ</div>
+          <span>Abdoul-Azizou Abou-Bakari</span>
+        </div>
+
+        <div class="profile-links" style="width: auto; margin: 0;">
+          <a href="https://github.com" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abdoul-azizou-abou-bakari-b95745255/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:abdoulazizou69725@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-copy" style="text-align: center;">
+        &copy; 2026 Abdoul-Azizou Abou-Bakari. Tous droits réservés. Conçu avec passion & précision.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DETAIL PROJET
+       ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal" onclick="closeProjectModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeProjectModal()">&times;</button>
+      <div class="modal-media-gallery">
+        <img id="modal-img" src="" alt="Aperçu du projet">
+      </div>
+      <div class="modal-body-content">
+        <div class="badge badge-primary section-tag" id="modal-tag">E-Commerce</div>
+        <h2 class="section-title" id="modal-title" style="font-size: 1.8rem; margin-top: 10px;">Titre du Projet</h2>
+        <p class="section-desc" id="modal-desc" style="margin-bottom: 20px; font-size: 1rem;">Description détaillée.</p>
+        <div id="modal-details" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 25px;"></div>
+        <div id="modal-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle" style="font-size: 1.2rem; color: var(--success);"></i>
+    <span id="toast-message">Message envoyé avec succès !</span>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT INTERACTIONS
+       ========================================================================== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
