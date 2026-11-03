@@ -724,26 +724,31 @@
         </div>
 
         <div class="contact-form-card">
-          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+           <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <!-- Clémentine avec type-->
+            <input type="hidden" name="access_key" value="cdc1f8c7-cf59-4eb6-b9c4-ee891b62f340">
+            <!-- Anti-spam -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="name">Votre Nom *</label>
-                <input type="text" id="name" class="form-control" placeholder="Ex: Jean Dupont" required>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Ex: Jean Dupont" required>
               </div>
               <div class="form-group">
                 <label class="form-label" for="email">Votre Email *</label>
-                <input type="email" id="email" class="form-control" placeholder="jean@exemple.com" required>
+                <input type="email" id="email" name="email" class="form-control" placeholder="jean@exemple.com" required>
               </div>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="subject">Objet du Message *</label>
-              <input type="text" id="subject" class="form-control" placeholder="Ex: Opportunité de projet / Mission" required>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="Ex: Opportunité de projet / Mission" required>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="message">Votre Message *</label>
-              <textarea id="message" class="form-control" placeholder="Décrivez brièvement votre besoin ou projet..." required></textarea>
+              <textarea id="message" name="message" class="form-control" placeholder="Décrivez brièvement votre besoin ou projet..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%;">
